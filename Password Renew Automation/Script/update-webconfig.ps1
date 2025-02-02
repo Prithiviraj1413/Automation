@@ -3,8 +3,8 @@ param (
     [string]$backupPath,
     [string]$newPassword,
 	# [string]$decryptBatchFilePath
-	[string]$decryptBatchFileName = "WIS_Decrypt.bat",
-	[string]$EncryptBatchFileName = "WIS_Encrypt.bat",
+	[string]$decryptBatchFileName = "Web_Decrypt.bat",
+	[string]$EncryptBatchFileName = "Web_Encrypt.bat",
 	# [string]$decrypt_configPath = "C:\Users\Path",
 	# [string]$encrypt_configPath = "C:\Users\Path"
 	[string]$decrypt_configPath,
