@@ -1,5 +1,5 @@
 @echo off
-set "folder_path=C:\Users\X166147\Downloads"
+set "folder_path=C:\Users\Path\Downloads"
 
 if not exist "%folder_path%" (
     echo Downloads folder does not exist.
