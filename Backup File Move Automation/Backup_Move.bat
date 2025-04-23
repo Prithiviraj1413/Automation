@@ -19,7 +19,13 @@ mkdir "%destination%%newFolderName%"
 
 :: Move all files from the source to the new destination folder
  move "%source%*" "%destination%%newFolderName%"
- 
+
+:: Compress the folder into a ZIP file using PowerShell
+PowerShell -Command "Compress-Archive -Path '%destination%\%newFolderName%' -DestinationPath '%destination%\%newFolderName%.zip'"
+
+:: Delete the original folder after creating the ZIP file
+rmdir /s /q "%destination%\%newFolderName%"
+
  echo %errorlevel%
  
 if  %errorlevel%==0 (
